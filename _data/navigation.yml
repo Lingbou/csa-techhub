@@ -1,0 +1,25 @@
+# 主导航栏
+main:
+  - title: 'Wiki'
+    url: /wiki/
+  - title: 'News'
+    url: /news/
+  - title: 'CSA-hub'
+    url: /csa-hub/
+  - title: 'CTF'
+    url: /ctf/
+
+# Wiki 侧边栏导航
+wiki:
+  - title: '快速开始'
+    children:
+      - title: '新手指南'
+        url: /wiki/getting-started/
+      - title: '常见问题'
+        url: /wiki/faq/
+  - title: '技术文档'
+    children:
+      - title: '开发指南'
+        url: /wiki/development/
+      - title: '部署文档'
+        url: /wiki/deployment/

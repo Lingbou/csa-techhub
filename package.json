@@ -1,0 +1,23 @@
+{
+  "name": "csa-techhub",
+  "version": "1.0.0",
+  "description": "CSA TechHub 官方网站",
+  "scripts": {
+    "check": "prettier --check .",
+    "fix": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lingbou/csa-techhub.git"
+  },
+  "keywords": [
+    "jekyll",
+    "website",
+    "csa"
+  ],
+  "author": "CSA TechHub",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}

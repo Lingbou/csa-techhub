@@ -1,0 +1,21 @@
+# 作者信息配置
+# 使用方法：在文章头部添加 author: key
+
+csa_team:
+  name: 'CSA 团队'
+  bio: '计算机科学协会技术团队'
+  avatar: '/assets/images/team-avatar.png'
+  links:
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/Lingbou/csa-techhub'
+# 示例作者（可以根据实际情况添加）
+# admin:
+#   name: "管理员"
+#   bio: "网站管理员"
+#   avatar: "/assets/images/admin-avatar.png"
+#   links:
+#     - label: "GitHub"
+#       icon: "fab fa-fw fa-github"
+#       url: "https://github.com/yourusername"
+
