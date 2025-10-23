@@ -51,9 +51,13 @@ csa-techhub/
 ├── _data/              # 数据文件
 │   ├── navigation.yml  # 导航配置
 │   └── authors.yml     # 作者信息
-├── _wiki/              # Wiki 文档集合
-├── _news/              # 新闻动态集合
-├── pages/              # 静态页面
+├── pages/              # 页面和集合
+│   ├── _wiki/          # Wiki 文档集合
+│   ├── _news/          # 新闻动态集合
+│   │   └── 2025/       # 按年份组织
+│   ├── _pages/         # 其他静态页面
+│   ├── csa-hub.md      # CSA-hub 板块
+│   └── ctf.md          # CTF 板块
 ├── assets/             # 静态资源
 │   └── css/           # 样式文件
 ├── index.md            # 首页
@@ -64,11 +68,11 @@ csa-techhub/
 
 ### 添加 Wiki 页面
 
-在 `_wiki/` 目录下创建 Markdown 文件。
+在 `pages/_wiki/` 目录下创建 Markdown 文件。
 
 ### 添加新闻
 
-在 `_news/` 目录下创建 Markdown 文件。
+在 `pages/_news/2025/` (或对应年份) 目录下创建 Markdown 文件。
 
 ## 许可
 

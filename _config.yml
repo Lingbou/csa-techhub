@@ -47,6 +47,9 @@ collections:
     output: true
     permalink: /news/:year/:month/:title/
 
+# 包含 pages 子目录
+collections_dir: pages
+
 # 默认配置
 defaults:
   # _posts
@@ -90,7 +93,7 @@ defaults:
 # 包含和排除
 include:
   - .htaccess
-  - _pages
+  - pages/_pages
 exclude:
   - '*.sublime-project'
   - '*.sublime-workspace'
