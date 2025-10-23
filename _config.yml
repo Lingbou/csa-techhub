@@ -1,0 +1,140 @@
+# 网站配置
+title: CSA TechHub
+subtitle: 计算机科学协会技术中心
+name: CSA TechHub
+email: contact@csa-techhub.org
+description: >-
+  计算机科学协会技术中心官方网站
+baseurl: ''
+url: 'http://localhost:4000'
+repository: 'Lingbou/csa-techhub'
+
+# 构建设置
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: 'default'
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  # - jekyll-paginate  # 暂时不需要分页功能
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-remote-theme
+
+# 分页（如果需要博客分页功能可以启用）
+# paginate: 10
+# paginate_path: /page:num/
+
+# 作者信息
+author:
+  name: 'CSA TechHub'
+  avatar: '/assets/images/avatar.png'
+  bio: '计算机科学协会技术中心'
+  location: '中国'
+  links:
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/Lingbou/csa-techhub'
+
+# 集合配置
+collections:
+  wiki:
+    output: true
+    permalink: /wiki/:path/
+  news:
+    output: true
+    permalink: /news/:year/:month/:title/
+
+# 默认配置
+defaults:
+  # _posts
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+  # _pages
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+  # _wiki
+  - scope:
+      path: ''
+      type: wiki
+    values:
+      layout: single
+      author_profile: false
+      toc: true
+      toc_sticky: true
+  # _news
+  - scope:
+      path: ''
+      type: news
+    values:
+      layout: single
+      author_profile: true
+      show_date: true
+
+# 包含和排除
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - '*.sublime-project'
+  - '*.sublime-workspace'
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+
+# 时区和语言
+timezone: Asia/Shanghai
+locale: 'zh-CN'
+
+# 搜索
+search: true
+lunr:
+  search_within_pages: true
+
+# SEO 相关
+social:
+  type: Organization
+  name: CSA TechHub
+  links:
+    - 'https://github.com/Lingbou/csa-techhub'
+# Analytics (未来可以添加)
+# analytics:
+#   provider: "google-gtag"
+#   google:
+#     tracking_id: "UA-XXXXXXXXX-X"
+
